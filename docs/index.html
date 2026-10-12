@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>heybox-universe · 把一整段宇宙旅程装进一个 skill</title>
+<meta name="description" content="用于复刻并继续开发「小黑盒 · 三世界宇宙旅程」的 Claude Code skill：逐字节快照、22 项浏览器回归、完整的版本记忆与用户偏好。">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=13">
+</head>
+<body class="is-loading">
+
+<!-- 载入行：致敬原作的 HEYBOX / GRAINS 进度条 -->
+<div id="loader" aria-hidden="true">
+  <p class="mono"><span>HEYBOX-UNIVERSE / SKILL</span> <b id="load-bar">[··········]</b> <i id="load-pct">0%</i></p>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="bar">
+  <a class="brand mono" href="#top" aria-label="回到顶部">
+    <svg viewBox="72 52 368 408" aria-hidden="true"><use href="#mark"/></svg>
+    <span>[ heybox-universe / SKILL ]</span>
+  </a>
+  <nav class="links mono" aria-label="外部链接">
+    <a href="#models">模型</a>
+    <a href="#install">安装</a>
+    <a href="https://xtbreak.github.io/heybox-universe/" target="_blank" rel="noopener">演示 <b>↗</b></a>
+    <a href="https://github.com/Xtbreak/heybox-universe-skill" target="_blank" rel="noopener">GitHub <b>↗</b></a>
+  </nav>
+</header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="mark" fill="currentColor">
+      <path id="mark-up" d="M228 87Q228 80 234 84L387 172Q395 176 395 184V327Q395 335 388 339L346 364Q339 368 339 360V219Q339 211 332 207L291 183Q283 178 283 186V220Q283 228 275 228H236Q228 228 228 220Z"/>
+      <use href="#mark-up" transform="rotate(180 256 256)"/>
+    </g>
+  </defs>
+</svg>
+
+<main id="top">
+
+  <!-- 01 · 首屏：线框描出标志，扫描线扫过后由方块填满 -->
+  <section class="hero" id="hero">
+    <div class="hero-stage">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="viewfinder" aria-hidden="true"><i></i><i></i><i></i></div>
+      <figure class="hero-mark" aria-hidden="true">
+        <svg viewBox="72 52 368 408">
+          <defs>
+            <pattern id="vox" width="13" height="13" patternUnits="userSpaceOnUse" x="2" y="1">
+              <rect x="1.5" y="1.5" width="10" height="10" rx="2.4"/>
+            </pattern>
+            <linearGradient id="scan-g" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8fdcff" stop-opacity="0"/>
+              <stop offset=".85" stop-color="#8fdcff" stop-opacity=".35"/>
+              <stop offset="1" stop-color="#eef3f6"/>
+            </linearGradient>
+            <clipPath id="mark-clip">
+              <use href="#mark-up"/>
+              <use href="#mark-up" transform="rotate(180 256 256)"/>
+            </clipPath>
+          </defs>
+          <g class="vox-wrap"><g clip-path="url(#mark-clip)"><rect class="vox" x="72" y="52" width="368" height="408" fill="url(#vox)"/></g></g>
+          <g class="outline">
+            <use href="#mark-up"/>
+            <use href="#mark-up" transform="rotate(180 256 256)"/>
+          </g>
+          <rect class="scan" x="40" y="-38" width="432" height="40" fill="url(#scan-g)"/>
+        </svg>
+      </figure>
+      <div class="hero-copy">
+        <p class="eyebrow mono">[ Claude Code / SKILL ]</p>
+        <h1 class="display">
+          <span class="line"><span>整段宇宙旅程，</span></span>
+          <span class="line"><span>装进一个 skill。</span></span>
+        </h1>
+        <p class="lead hero-sub">逐字节复刻「小黑盒 · 三世界宇宙旅程」，带着它全部的记忆继续往下做。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · 数字 -->
+  <section class="numbers" aria-label="关键数字">
+    <ul>
+      <li><b class="num" data-to="16">0</b><small>MB</small><span>逐字节快照</span></li>
+      <li><b class="num" data-to="104">0</b><small>FILES</small><span>逐个校验</span></li>
+      <li><b><em class="num" data-to="22">0</em>/22</b><small>PASS</small><span>浏览器回归</span></li>
+      <li><b class="num" data-to="0" data-keep>0</b><small>DEPS</small><span>零依赖、零构建</span></li>
+    </ul>
+  </section>
+
+  <!-- 03 · 模型：快照里的真实 GLB，可拖动旋转 -->
+  <section class="models" id="models" aria-labelledby="models-title">
+    <div class="sec-head">
+      <p class="eyebrow mono">[ 模型 / MODELS ]</p>
+      <h2 class="display" id="models-title">八件模型，<br>都装在快照里。</h2>
+      <p class="lead">每一件都是项目里真实在用的 GLB，拖动旋转，点选切换。</p>
+    </div>
+    <div class="md-body">
+      <ol class="md-list" role="list">
+        <li><button type="button" data-i="0" class="on"><i class="mono">01</i><span>小黑盒</span></button></li>
+        <li><button type="button" data-i="1"><i class="mono">02</i><span>曙光号</span></button></li>
+        <li><button type="button" data-i="2"><i class="mono">03</i><span>希波克拉底</span></button></li>
+        <li><button type="button" data-i="3"><i class="mono">04</i><span>破损头盔</span></button></li>
+        <li><button type="button" data-i="4"><i class="mono">05</i><span>机器人</span></button></li>
+        <li><button type="button" data-i="5"><i class="mono">06</i><span>玩具车</span></button></li>
+        <li><button type="button" data-i="6"><i class="mono">07</i><span>勤务手枪</span></button></li>
+        <li><button type="button" data-i="7"><i class="mono">08</i><span>小人</span></button></li>
+      </ol>
+      <figure class="md-view surface">
+        <canvas id="md-gl" aria-label="3D 模型预览，可拖动旋转"></canvas>
+        <div class="md-load mono" aria-hidden="true"><i></i><span id="md-pct">0%</span></div>
+        <figcaption class="md-cap">
+          <h3 id="md-name">小黑盒</h3>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 05 · 铁律 -->
+  <section class="rules" aria-labelledby="rules-title">
+    <div class="sec-head">
+      <p class="eyebrow mono">[ 铁律 / RULES ]</p>
+      <h2 class="display" id="rules-title">十条，<br>每一条都被纠正过。</h2>
+    </div>
+    <ol class="rule-list">
+      <li><i class="mono">01</i><p>全程中文；有两种以上理解时，<b>先问再做</b>。</p></li>
+      <li><i class="mono">02</i><p>炫技优先，几乎零文案，元素要少。</p></li>
+      <li><i class="mono">03</i><p>一滑一段，自动到位，三个游戏页<b>必停</b>，跟手。</p></li>
+      <li><i class="mono">04</i><p>开屏保留线框和扫描，其余直接到位，约 4 秒。</p></li>
+      <li><i class="mono">05</i><p>进出游戏只走展台光环传送门，不黑屏、不卡顿。</p></li>
+      <li><i class="mono">06</i><p>不自动降特效；游戏按需加载，退出即释放。</p></li>
+      <li><i class="mono">07</i><p><code>sample.html</code> 与 <code>index.html</code> 逐字节一致。</p></li>
+      <li><i class="mono">08</i><p>预览只用 <code>启动预览.py</code>，测试走 headless。</p></li>
+      <li><i class="mono">09</i><p>每个阶段：回归 → 前后截图 → 更新文档 → 提交。</p></li>
+      <li><i class="mono">10</i><p>保留 credits 与授权文件，新素材只用 CC0。</p></li>
+    </ol>
+  </section>
+
+  <!-- 06 · 工作流：终端 -->
+  <section class="flow" id="install">
+    <div class="sec-head">
+      <p class="eyebrow mono">[ 恢复 / RESTORE ]</p>
+      <h2 class="display">恢复、预览、回归。<br>然后继续。</h2>
+    </div>
+    <div class="flow-body">
+      <ol class="steps">
+        <li data-step="0"><i class="mono">01</i> 安装 skill</li>
+        <li data-step="1"><i class="mono">02</i> 从快照恢复并校验</li>
+        <li data-step="2"><i class="mono">03</i> 打开预览服务器</li>
+        <li data-step="3"><i class="mono">04</i> 跑 22 项回归</li>
+      </ol>
+    <figure class="term surface" aria-label="终端演示">
+      <div class="term-bar"><i></i><i></i><i></i>
+        <button class="btn sm copy mono" type="button" data-copy="git clone https://github.com/Xtbreak/heybox-universe-skill ~/.claude/skills/heybox-universe">复制</button>
+      </div>
+      <pre class="term-body" id="term"></pre>
+    </figure>
+    </div>
+  </section>
+
+  <!-- 07 · 时间线 -->
+  <section class="timeline" id="timeline">
+    <div class="tl-stage">
+      <div class="tl-head">
+        <p class="eyebrow mono">[ 演进 / JOURNEY ]</p>
+        <h2 class="display">每一步，<br>都有来由。</h2>
+      </div>
+      <ol class="tl-track">
+        <li><b class="mono">21</b><p>9 章滚动旅程，3 个游戏，精修黑盒 GLB。</p></li>
+        <li><b class="mono">22</b><p>Bloom、色差、暗角、7.2 万粒子、星云。</p></li>
+        <li><b class="mono">27</b><p>几乎零文案；新建 3D 客厅，6 个角色。</p></li>
+        <li><b class="mono">29</b><p>游戏按需加载，退出即释放。</p></li>
+        <li><b class="mono">33</b><p>第一关改为纸板横版射击，三关统一风格。</p></li>
+        <li><b class="mono">37</b><p>4800 颗方块的黑盒；石墨黑 + 冰蓝。</p></li>
+        <li><b class="mono">39</b><p>写实月面、大砖黑盒、153 个刚体。</p></li>
+        <li><b class="mono">41</b><p>取景框 → 线框 → 扫描 → 月面长出。</p></li>
+        <li><b class="mono">42c</b><p>分段滚动：一次手势只走一段。</p></li>
+        <li><b class="mono">42h</b><p>区分触控板惯性和新输入。</p></li>
+        <li><b class="mono">43</b><p>展台光环变成传送门。</p></li>
+        <li><b class="mono">43b</b><p>加速、匀速、减速；阻尼跟手。</p></li>
+        <li class="now"><b class="mono">43c</b><p>吉普展台抬高，消除闪烁。</p></li>
+        <li class="next"><b class="mono">44+</b><p>CC0 素材风格对比，逐个世界替换。</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 08 · 结构 -->
+  <section class="anatomy" aria-labelledby="anatomy-title">
+    <div class="sec-head">
+      <p class="eyebrow mono">[ 结构 / ANATOMY ]</p>
+      <h2 class="display" id="anatomy-title">打开它，<br>里面是这些。</h2>
+    </div>
+    <div class="an-body">
+      <ul class="tree" role="list">
+        <li data-k="skill" class="on"><span>SKILL.md</span></li>
+        <li class="dir"><span>reference/</span></li>
+        <li data-k="pref" class="in"><span>user-preferences.md</span></li>
+        <li data-k="spec" class="in"><span>spec.md</span></li>
+        <li data-k="hist" class="in"><span>history.md</span></li>
+        <li data-k="arch" class="in"><span>architecture.md</span></li>
+        <li data-k="work" class="in"><span>workflow.md</span></li>
+        <li class="dir"><span>scripts/</span></li>
+        <li data-k="restore" class="in"><span>restore.sh</span></li>
+        <li data-k="regress" class="in"><span>regress.mjs</span></li>
+        <li data-k="check" class="in"><span>final-check.mjs</span></li>
+        <li data-k="cdp" class="in"><span>cdp.mjs · sheet.mjs</span></li>
+        <li class="dir"><span>assets/</span></li>
+        <li data-k="snap" class="in"><span>heybox-journey-43c.tar.gz</span></li>
+      </ul>
+      <div class="an-detail" aria-live="polite">
+        <p class="mono an-path" id="an-path">SKILL.md</p>
+        <p class="an-text" id="an-text">入口：怎么恢复、读什么、十条铁律、当前进度。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 · 结尾：欢迎回来 -->
+  <section class="finale">
+    <div class="fin-bg" aria-hidden="true"></div>
+    <div class="fin-inner">
+      <p class="eyebrow mono">[ 开始 / INSTALL ]</p>
+      <h2 class="display fin-title">欢迎回来。</h2>
+      <p class="lead">装上 skill，从 journey-43c 接着往下做。</p>
+      <div class="fin-links">
+        <a class="btn mono" href="https://xtbreak.github.io/heybox-universe/" target="_blank" rel="noopener">打开线上演示 <b>↗</b></a>
+        <a class="btn mono" href="https://github.com/Xtbreak/heybox-universe-skill" target="_blank" rel="noopener">查看仓库 <b>↗</b></a>
+      </div>
+    </div>
+    <footer class="foot mono">
+      <span>非官方概念 Demo，与小黑盒官方无关</span>
+      <span>模型版权归各作者</span>
+    </footer>
+  </section>
+
+</main>
+
+<script type="module" src="main.js?v=13"></script>
+<script type="module" src="models.js?v=13"></script>
+</body>
+</html>
