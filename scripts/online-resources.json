@@ -1,0 +1,848 @@
+{
+  "base_url": "https://xtbreak.github.io/heybox-universe/",
+  "checked": 120,
+  "elapsed_seconds": 22.5,
+  "failed": [],
+  "files": [
+    {
+      "file": "miniature-car.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 6712,
+      "encoding": "gzip"
+    },
+    {
+      "file": "visual-lab.html",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1683,
+      "encoding": "gzip"
+    },
+    {
+      "file": "sandbox-game.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 94014,
+      "encoding": "gzip"
+    },
+    {
+      "file": "journey-particles.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 17162,
+      "encoding": "gzip"
+    },
+    {
+      "file": "open-adventure.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 52499,
+      "encoding": "gzip"
+    },
+    {
+      "file": "demo-mechanical.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 13202,
+      "encoding": "gzip"
+    },
+    {
+      "file": "world.webp",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 276950,
+      "encoding": ""
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 13011,
+      "encoding": "gzip"
+    },
+    {
+      "file": "spatial-refraction.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2175,
+      "encoding": "gzip"
+    },
+    {
+      "file": "journey-ultra.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 7219,
+      "encoding": "gzip"
+    },
+    {
+      "file": "portal-games.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 41137,
+      "encoding": "gzip"
+    },
+    {
+      "file": "games.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 16438,
+      "encoding": "gzip"
+    },
+    {
+      "file": "open-world.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 23044,
+      "encoding": "gzip"
+    },
+    {
+      "file": "model-world.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 21211,
+      "encoding": "gzip"
+    },
+    {
+      "file": "demo-particle.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 11869,
+      "encoding": "gzip"
+    },
+    {
+      "file": "title-decode.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2008,
+      "encoding": "gzip"
+    },
+    {
+      "file": "cosmic-journey.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 18952,
+      "encoding": "gzip"
+    },
+    {
+      "file": "world.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 13088,
+      "encoding": "gzip"
+    },
+    {
+      "file": "sample.html",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 13011,
+      "encoding": "gzip"
+    },
+    {
+      "file": "material-study-flight.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 20439,
+      "encoding": "gzip"
+    },
+    {
+      "file": "miniature-playground-props.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 13602,
+      "encoding": "gzip"
+    },
+    {
+      "file": "game-session-ui.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1576,
+      "encoding": "gzip"
+    },
+    {
+      "file": "miniature-landscape.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 18939,
+      "encoding": "gzip"
+    },
+    {
+      "file": "environment-assets.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2656,
+      "encoding": "gzip"
+    },
+    {
+      "file": "journey-quality.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1250,
+      "encoding": "gzip"
+    },
+    {
+      "file": "heybox-mark.svg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 413,
+      "encoding": "gzip"
+    },
+    {
+      "file": "model-hover-entry.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3459,
+      "encoding": "gzip"
+    },
+    {
+      "file": "material-study.css",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 6804,
+      "encoding": "gzip"
+    },
+    {
+      "file": "material-study.html",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3450,
+      "encoding": "gzip"
+    },
+    {
+      "file": "texture-prewarm.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2375,
+      "encoding": "gzip"
+    },
+    {
+      "file": "driving-game.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 23611,
+      "encoding": "gzip"
+    },
+    {
+      "file": "space-backdrop.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3599,
+      "encoding": "gzip"
+    },
+    {
+      "file": "visual-lab.css",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 5823,
+      "encoding": "gzip"
+    },
+    {
+      "file": "style.css",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 9228,
+      "encoding": "gzip"
+    },
+    {
+      "file": "destination-arrival.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 5353,
+      "encoding": "gzip"
+    },
+    {
+      "file": "cinematic-pass.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3983,
+      "encoding": "gzip"
+    },
+    {
+      "file": "adventure-worlds.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 47952,
+      "encoding": "gzip"
+    },
+    {
+      "file": "refined-heybox-core.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 8808,
+      "encoding": "gzip"
+    },
+    {
+      "file": "demo-cosmic.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 11710,
+      "encoding": "gzip"
+    },
+    {
+      "file": "credits.html",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 9994,
+      "encoding": "gzip"
+    },
+    {
+      "file": "material-study-scene.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 15883,
+      "encoding": "gzip"
+    },
+    {
+      "file": "idle-world-snap.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 21801,
+      "encoding": "gzip"
+    },
+    {
+      "file": "miniature-driving-physics.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 6977,
+      "encoding": "gzip"
+    },
+    {
+      "file": "sample.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 42230,
+      "encoding": "gzip"
+    },
+    {
+      "file": "flight-game.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 72322,
+      "encoding": "gzip"
+    },
+    {
+      "file": "app.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 5268,
+      "encoding": "gzip"
+    },
+    {
+      "file": "material-study.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 12082,
+      "encoding": "gzip"
+    },
+    {
+      "file": "scenes.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 12552,
+      "encoding": "gzip"
+    },
+    {
+      "file": "game-audio.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 42161,
+      "encoding": "gzip"
+    },
+    {
+      "file": "portal-entry.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 35849,
+      "encoding": "gzip"
+    },
+    {
+      "file": "favicon.svg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 481,
+      "encoding": "gzip"
+    },
+    {
+      "file": "sample.css",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 49412,
+      "encoding": "gzip"
+    },
+    {
+      "file": "visual-lab.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 8398,
+      "encoding": "gzip"
+    },
+    {
+      "file": "context-recovery.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2058,
+      "encoding": "gzip"
+    },
+    {
+      "file": "heybox-core.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 8950,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/sports-car.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 10321896,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/heybox-original-refined.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2320748,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/dawn-ship.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 982536,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/flight-ship.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3809580,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/ToyCar.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 5422412,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/RobotExpressive.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 463988,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/ATTRIBUTION.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 950,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/flight-ship-v8.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 687584,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/FLIGHT-ASSET-ATTRIBUTION.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 881,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/DAWN-ASSET-ATTRIBUTION.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 912,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/fps-pistol.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 481364,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/FLIGHT-ASSET-MANIFEST.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 4998,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/DamagedHelmet.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3773916,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/DAWN-ASSET-MANIFEST.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 5319,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/UPGRADE-ATTRIBUTION.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2772,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/DAWN-ASSET-VALIDATION.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2155,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/UPGRADE-ASSETS.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 14242,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/FLIGHT-ASSET-VALIDATION.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2198,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/coastal-tree-validation.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3285,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/asphalt_02_diff_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 87018,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/grass_ground_diff_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 48536,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/coastal-tree-impostor-front.png",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 334500,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/COASTAL-PERFORMANCE-MANIFEST.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 13514,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/rock_face_03_nor_gl_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 78016,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/grass_ground_nor_gl_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 64611,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/coastal-tree.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2517028,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/roof_slates_02_diff_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 76611,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/coastal-tree-mid.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 352700,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/coastal-facade-validation.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 6124,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/white_plaster_rough_01_nor_gl_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 21475,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/coastal-factory-validation.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 6545,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/rectangular_paving_diff_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 28886,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/coastal-facade.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3821088,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/COASTAL-ASSET-MANIFEST.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 17873,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/COASTAL-ASSET-CREDITS.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1728,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/coastal-tree-mid-validation.json",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2306,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/rock_face_03_diff_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 60139,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/rectangular_paving_nor_gl_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 17818,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/asphalt_02_nor_gl_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 54253,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/roof_slates_02_nor_gl_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 69568,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/white_plaster_rough_01_diff_1k.jpg",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 59988,
+      "encoding": ""
+    },
+    {
+      "file": "models/environment/coastal-factory.glb",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 2416164,
+      "encoding": "gzip"
+    },
+    {
+      "file": "models/environment/coastal-tree-impostor-side.png",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 324390,
+      "encoding": ""
+    },
+    {
+      "file": "audio/engine-qubodup-loop.wav",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 691532,
+      "encoding": ""
+    },
+    {
+      "file": "audio/ENGINE-LICENSE.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1023,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/meshopt_decoder.module.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 29256,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/three.module.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 662772,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/THREE-LICENSE.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1081,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/RoomEnvironment.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 4972,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/Pass.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 4230,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/three.core.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1458113,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/UnrealBloomPass.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 15391,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/GLTFLoader.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 117568,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/SkeletonUtils.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 11547,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/MESHOPT-LICENSE.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1079,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/BufferGeometryUtils.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 37724,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/MaskPass.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 4694,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/LOCAL-SOURCES.txt",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 341,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/EffectComposer.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 8504,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/ShaderPass.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 3240,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/OutputPass.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 4187,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/OutputShader.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1876,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/CopyShader.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 729,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/LuminosityHighPassShader.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 1303,
+      "encoding": "gzip"
+    },
+    {
+      "file": "vendor/RenderPass.js",
+      "status": 200,
+      "matches_local": true,
+      "bytes": 4292,
+      "encoding": "gzip"
+    }
+  ]
+}
