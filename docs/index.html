@@ -7,7 +7,7 @@
 <meta name="description" content="用于复刻并继续开发「小黑盒 · 三世界宇宙旅程」的 Claude Code skill：逐字节快照、22 项浏览器回归、完整的版本记忆与用户偏好。">
 <meta name="theme-color" content="#0b0c0e">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=13">
 </head>
 <body class="is-loading">
 
@@ -25,6 +25,7 @@
     <span>[ heybox-universe / SKILL ]</span>
   </a>
   <nav class="links mono" aria-label="外部链接">
+    <a href="#models">模型</a>
     <a href="#install">安装</a>
     <a href="https://xtbreak.github.io/heybox-universe/" target="_blank" rel="noopener">演示 <b>↗</b></a>
     <a href="https://github.com/Xtbreak/heybox-universe-skill" target="_blank" rel="noopener">GitHub <b>↗</b></a>
@@ -72,71 +73,59 @@
         </svg>
       </figure>
       <div class="hero-copy">
-        <p class="eyebrow mono">[ CLAUDE CODE SKILL ]</p>
+        <p class="eyebrow mono">[ Claude Code / SKILL ]</p>
         <h1 class="display">
           <span class="line"><span>整段宇宙旅程，</span></span>
           <span class="line"><span>装进一个 skill。</span></span>
         </h1>
-        <p class="hero-sub">逐字节复刻「小黑盒 · 三世界宇宙旅程」，带着它全部的记忆继续往下做。</p>
+        <p class="lead hero-sub">逐字节复刻「小黑盒 · 三世界宇宙旅程」，带着它全部的记忆继续往下做。</p>
       </div>
-      <dl class="hero-meta mono">
-        <div><dt>REV</dt><dd>journey-43c</dd></div>
-        <div><dt>GIT</dt><dd>e5ae668</dd></div>
-        <div><dt>STACK</dt><dd>Three.js r186 · 无构建</dd></div>
-      </dl>
-      <p class="hero-hint mono" aria-hidden="true"><i></i></p>
     </div>
   </section>
 
   <!-- 02 · 数字 -->
   <section class="numbers" aria-label="关键数字">
     <ul>
-      <li><b class="num" data-to="16">0</b><small>MB</small><span>逐字节快照<br>含 dist/、blender/ 与全部文档</span></li>
-      <li><b class="num" data-to="104">0</b><small>FILES</small><span>按 SHA-256<br>逐个文件校验</span></li>
-      <li><b><em class="num" data-to="22">0</em>/22</b><small>PASS</small><span>浏览器回归<br>滚动手感到进出游戏</span></li>
-      <li><b class="num" data-to="0" data-keep>0</b><small>DEPS</small><span>没有 npm、CDN<br>也没有构建步骤</span></li>
+      <li><b class="num" data-to="16">0</b><small>MB</small><span>逐字节快照</span></li>
+      <li><b class="num" data-to="104">0</b><small>FILES</small><span>逐个校验</span></li>
+      <li><b><em class="num" data-to="22">0</em>/22</b><small>PASS</small><span>浏览器回归</span></li>
+      <li><b class="num" data-to="0" data-keep>0</b><small>DEPS</small><span>零依赖、零构建</span></li>
     </ul>
   </section>
 
-  <!-- 03 · 记忆：用户原话 -->
-  <section class="memory" id="memory">
-    <div class="memory-head">
-      <p class="eyebrow mono">[ 它记得 / MEMORY ]</p>
-      <h2 class="display reveal">你说过的每一句话，<br>它都记得。</h2>
-      <p class="lead reveal">做这个项目时，最贵的错误都是「自己挑了一种理解直接做」。skill 把全部沟通记录里的提示词逐条提炼成规则，下一个接手的人不用再踩一遍。</p>
+  <!-- 03 · 模型：快照里的真实 GLB，可拖动旋转 -->
+  <section class="models" id="models" aria-labelledby="models-title">
+    <div class="sec-head">
+      <p class="eyebrow mono">[ 模型 / MODELS ]</p>
+      <h2 class="display" id="models-title">八件模型，<br>都装在快照里。</h2>
+      <p class="lead">每一件都是项目里真实在用的 GLB，拖动旋转，点选切换。</p>
     </div>
-    <div class="quotes" aria-label="提炼出的规则">
-      <ul class="q-row">
-        <li><header class="mono"><span>❯ rule</span><cite>journey-35</cite></header><q>炫技优先：特效与动效拉满，文案让位。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-42</cite></header><q>元素只做减法，画面始终干净。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-37</cite></header><q>光照与模型，按写实标准重做。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-28</cite></header><q>特效始终满配，不做自动降级。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-26</cite></header><q>冰封终章，整段删除。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-41</cite></header><q>开场放手重做，不迁就旧审美。</q></li>
-      </ul>
-      <ul class="q-row rev">
-        <li><header class="mono"><span>❯ rule</span><cite>偏好 · 沟通</cite></header><q>有两种以上理解时，先问再做。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-43b</cite></header><q>滚动阻尼 9 → 40，做到跟手。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-42</cite></header><q>直接到位，去掉缓慢过渡。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>偏好 · 文案</cite></header><q>几乎零文案，让画面说话。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-29</cite></header><q>退出游戏，即释放进程。</q></li>
-        <li><header class="mono"><span>❯ rule</span><cite>journey-43c</cite></header><q>展台抬高 3.5 cm，消除底部闪烁。</q></li>
-      </ul>
-    </div>
-    <div class="removed">
-      <p class="mono label">[ 删掉的东西，不会再回来 ]</p>
-      <ul class="strike">
-        <li>章节号</li><li>角标</li><li>滚动提示</li><li>鼠标拖尾</li><li>悬停信标</li>
-        <li>3D 文字「悬停 1s」</li><li>超空间隧道</li><li>转场闪白</li><li>冰封终章</li><li>画质开关</li>
-      </ul>
+    <div class="md-body">
+      <ol class="md-list" role="list">
+        <li><button type="button" data-i="0" class="on"><i class="mono">01</i><span>小黑盒</span></button></li>
+        <li><button type="button" data-i="1"><i class="mono">02</i><span>曙光号</span></button></li>
+        <li><button type="button" data-i="2"><i class="mono">03</i><span>希波克拉底</span></button></li>
+        <li><button type="button" data-i="3"><i class="mono">04</i><span>破损头盔</span></button></li>
+        <li><button type="button" data-i="4"><i class="mono">05</i><span>机器人</span></button></li>
+        <li><button type="button" data-i="5"><i class="mono">06</i><span>玩具车</span></button></li>
+        <li><button type="button" data-i="6"><i class="mono">07</i><span>勤务手枪</span></button></li>
+        <li><button type="button" data-i="7"><i class="mono">08</i><span>小人</span></button></li>
+      </ol>
+      <figure class="md-view surface">
+        <canvas id="md-gl" aria-label="3D 模型预览，可拖动旋转"></canvas>
+        <div class="md-load mono" aria-hidden="true"><i></i><span id="md-pct">0%</span></div>
+        <figcaption class="md-cap">
+          <h3 id="md-name">小黑盒</h3>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- 05 · 铁律 -->
   <section class="rules" aria-labelledby="rules-title">
-    <div class="rules-head">
+    <div class="sec-head">
       <p class="eyebrow mono">[ 铁律 / RULES ]</p>
-      <h2 class="display reveal" id="rules-title">十条，<br>每一条都被纠正过。</h2>
+      <h2 class="display" id="rules-title">十条，<br>每一条都被纠正过。</h2>
     </div>
     <ol class="rule-list">
       <li><i class="mono">01</i><p>全程中文；有两种以上理解时，<b>先问再做</b>。</p></li>
@@ -154,29 +143,31 @@
 
   <!-- 06 · 工作流：终端 -->
   <section class="flow" id="install">
-    <div class="flow-copy">
-      <p class="eyebrow mono">[ 三条命令 / RESTORE ]</p>
-      <h2 class="display reveal">恢复、预览、回归。<br>然后继续。</h2>
-      <ol class="steps mono">
-        <li data-step="0"><i>01</i> 安装 skill</li>
-        <li data-step="1"><i>02</i> 从快照恢复并逐文件校验</li>
-        <li data-step="2"><i>03</i> 用多线程预览服务器打开</li>
-        <li data-step="3"><i>04</i> 跑 22 项浏览器回归</li>
-      </ol>
+    <div class="sec-head">
+      <p class="eyebrow mono">[ 恢复 / RESTORE ]</p>
+      <h2 class="display">恢复、预览、回归。<br>然后继续。</h2>
     </div>
-    <figure class="term" aria-label="终端演示">
-      <div class="term-bar mono"><i></i><i></i><i></i><span>~/Code — zsh</span>
-        <button class="copy" type="button" data-copy="git clone https://github.com/Xtbreak/heybox-universe-skill ~/.claude/skills/heybox-universe">[ 复制安装命令 ]</button>
+    <div class="flow-body">
+      <ol class="steps">
+        <li data-step="0"><i class="mono">01</i> 安装 skill</li>
+        <li data-step="1"><i class="mono">02</i> 从快照恢复并校验</li>
+        <li data-step="2"><i class="mono">03</i> 打开预览服务器</li>
+        <li data-step="3"><i class="mono">04</i> 跑 22 项回归</li>
+      </ol>
+    <figure class="term surface" aria-label="终端演示">
+      <div class="term-bar"><i></i><i></i><i></i>
+        <button class="btn sm copy mono" type="button" data-copy="git clone https://github.com/Xtbreak/heybox-universe-skill ~/.claude/skills/heybox-universe">复制</button>
       </div>
-      <pre class="term-body mono" id="term"></pre>
+      <pre class="term-body" id="term"></pre>
     </figure>
+    </div>
   </section>
 
   <!-- 07 · 时间线 -->
   <section class="timeline" id="timeline">
     <div class="tl-stage">
       <div class="tl-head">
-        <p class="eyebrow mono">[ 演进 / JOURNEY 21 → 43c ]</p>
+        <p class="eyebrow mono">[ 演进 / JOURNEY ]</p>
         <h2 class="display">每一步，<br>都有来由。</h2>
       </div>
       <ol class="tl-track">
@@ -189,10 +180,10 @@
         <li><b class="mono">39</b><p>写实月面、大砖黑盒、153 个刚体。</p></li>
         <li><b class="mono">41</b><p>取景框 → 线框 → 扫描 → 月面长出。</p></li>
         <li><b class="mono">42c</b><p>分段滚动：一次手势只走一段。</p></li>
-        <li><b class="mono">42h</b><p>用「逐渐变弱」区分触控板惯性和新输入。</p></li>
-        <li><b class="mono">43</b><p>展台光环变成传送门，游戏画面活在环里。</p></li>
-        <li><b class="mono">43b</b><p>0.12s 加速 + 匀速 + 减速；阻尼 9 → 40。</p></li>
-        <li class="now"><b class="mono">43c</b><p>吉普展台抬高 3.5 cm，消除 z-fighting。</p></li>
+        <li><b class="mono">42h</b><p>区分触控板惯性和新输入。</p></li>
+        <li><b class="mono">43</b><p>展台光环变成传送门。</p></li>
+        <li><b class="mono">43b</b><p>加速、匀速、减速；阻尼跟手。</p></li>
+        <li class="now"><b class="mono">43c</b><p>吉普展台抬高，消除闪烁。</p></li>
         <li class="next"><b class="mono">44+</b><p>CC0 素材风格对比，逐个世界替换。</p></li>
       </ol>
     </div>
@@ -200,15 +191,15 @@
 
   <!-- 08 · 结构 -->
   <section class="anatomy" aria-labelledby="anatomy-title">
-    <div class="an-head">
+    <div class="sec-head">
       <p class="eyebrow mono">[ 结构 / ANATOMY ]</p>
-      <h2 class="display reveal" id="anatomy-title">打开它，<br>里面是这些。</h2>
+      <h2 class="display" id="anatomy-title">打开它，<br>里面是这些。</h2>
     </div>
     <div class="an-body">
-      <ul class="tree mono" role="list">
-        <li data-k="skill" class="on"><span>SKILL.md</span><em>入口</em></li>
+      <ul class="tree" role="list">
+        <li data-k="skill" class="on"><span>SKILL.md</span></li>
         <li class="dir"><span>reference/</span></li>
-        <li data-k="pref" class="in"><span>user-preferences.md</span><em>必读</em></li>
+        <li data-k="pref" class="in"><span>user-preferences.md</span></li>
         <li data-k="spec" class="in"><span>spec.md</span></li>
         <li data-k="hist" class="in"><span>history.md</span></li>
         <li data-k="arch" class="in"><span>architecture.md</span></li>
@@ -219,11 +210,11 @@
         <li data-k="check" class="in"><span>final-check.mjs</span></li>
         <li data-k="cdp" class="in"><span>cdp.mjs · sheet.mjs</span></li>
         <li class="dir"><span>assets/</span></li>
-        <li data-k="snap" class="in"><span>heybox-journey-43c.tar.gz</span><em>16 MB</em></li>
+        <li data-k="snap" class="in"><span>heybox-journey-43c.tar.gz</span></li>
       </ul>
       <div class="an-detail" aria-live="polite">
         <p class="mono an-path" id="an-path">SKILL.md</p>
-        <p class="an-text" id="an-text">入口说明：怎么恢复、开工前读什么、十条铁律、当前进度与下一步。提到「小黑盒」「heybox」「传送门」「journey-4x」时自动加载。</p>
+        <p class="an-text" id="an-text">入口：怎么恢复、读什么、十条铁律、当前进度。</p>
       </div>
     </div>
   </section>
@@ -234,25 +225,21 @@
     <div class="fin-inner">
       <p class="eyebrow mono">[ 开始 / INSTALL ]</p>
       <h2 class="display fin-title">欢迎回来。</h2>
-      <p class="lead">装上 skill，恢复快照，从 journey-43c 接着往下做。</p>
-      <div class="cmd mono">
-        <span class="sig">$</span>
-        <code>git clone https://github.com/Xtbreak/heybox-universe-skill ~/.claude/skills/heybox-universe</code>
-        <button class="copy" type="button" data-copy="git clone https://github.com/Xtbreak/heybox-universe-skill ~/.claude/skills/heybox-universe">[ 复制 ]</button>
-      </div>
-      <div class="fin-links mono">
-        <a class="btn" href="https://xtbreak.github.io/heybox-universe/" target="_blank" rel="noopener"><span>[</span> 打开线上演示 <b>↗</b> <span>]</span></a>
-        <a class="btn" href="https://github.com/Xtbreak/heybox-universe-skill" target="_blank" rel="noopener"><span>[</span> 查看仓库 <b>↗</b> <span>]</span></a>
+      <p class="lead">装上 skill，从 journey-43c 接着往下做。</p>
+      <div class="fin-links">
+        <a class="btn mono" href="https://xtbreak.github.io/heybox-universe/" target="_blank" rel="noopener">打开线上演示 <b>↗</b></a>
+        <a class="btn mono" href="https://github.com/Xtbreak/heybox-universe-skill" target="_blank" rel="noopener">查看仓库 <b>↗</b></a>
       </div>
     </div>
     <footer class="foot mono">
-      <span>非官方、非商用课程概念 Demo，与小黑盒官方无关</span>
-      <span>skill 内附原项目 credits 与授权文件</span>
+      <span>非官方概念 Demo，与小黑盒官方无关</span>
+      <span>模型版权归各作者</span>
     </footer>
   </section>
 
 </main>
 
-<script type="module" src="main.js?v=8"></script>
+<script type="module" src="main.js?v=13"></script>
+<script type="module" src="models.js?v=13"></script>
 </body>
 </html>

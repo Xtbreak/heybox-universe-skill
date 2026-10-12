@@ -27,8 +27,13 @@ const at = async (sel, p, name, wait = 900) => {
   await b.shot(`${out}/${name}.png`);
 };
 await at('.numbers', 0, '06-numbers', 2000);
-await at('.memory', 0, '09-memory', 1400);
-await at('.removed', 0, '10-removed', 1600);
+await at('.models', 0, '09-models-head', 1400);
+await at('.md-view', 0, '10-models-0', 6000);
+for (const i of [1, 3, 4, 5, 7]) {
+  await b.ev(`document.querySelectorAll('.md-list button')[${i}].click()`);
+  await sleep(i === 5 ? 9000 : 4500);
+  await b.shot(`${out}/10-models-${i}.png`);
+}
 await at('.rules', 0, '11-rules', 1400);
 await at('.flow', 0, '12-flow', 9000);
 await at('#timeline', .1, '13-timeline-a', 600);

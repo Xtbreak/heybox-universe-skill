@@ -39,15 +39,8 @@ const io = new IntersectionObserver(es => es.forEach(e => {
   e.target.classList.add('in');
   e.target.dispatchEvent(new Event('inview'));
   io.unobserve(e.target);
-}), {threshold: .35});
-$$('.reveal, .strike, .numbers, .term').forEach(el => io.observe(el));
-
-// ---------- 提示词跑马灯：复制一份，平移 -50% 时无缝衔接 ----------
-$$('.q-row').forEach(row => [...row.children].forEach(li => {
-  const c = li.cloneNode(true);
-  c.setAttribute('aria-hidden', 'true');
-  row.appendChild(c);
-}));
+}), {threshold: 0, rootMargin: '0px 0px -12% 0px'});
+$$('.reveal, .numbers, .term').forEach(el => io.observe(el));
 
 // ---------- 数字解码 ----------
 $('.numbers').addEventListener('inview', () => {
@@ -66,7 +59,7 @@ $('.numbers').addEventListener('inview', () => {
 });
 
 // ---------- 滚动驱动 ----------
-const heroCopy = $('.hero-copy'), heroMeta = $('.hero-meta'), heroMark = $('.hero-mark');
+const heroCopy = $('.hero-copy'), heroMark = $('.hero-mark');
 const progress = $('.progress');
 const tl = $('#timeline'), track = $('.tl-track');
 let vw = innerWidth, vh = innerHeight;
@@ -92,10 +85,15 @@ function onScroll() {
     const out = smooth(.05, .7, hp);
     heroCopy.style.opacity = 1 - out;
     heroCopy.style.transform = `translateY(${-out * 60}px)`;
-    heroMeta.style.opacity = 1 - out;
     heroMark.style.setProperty('--py', (hp * 18).toFixed(2) + 'vh');
     heroMark.style.setProperty('--pa', (1 - smooth(.2, .95, hp) * .85).toFixed(3));
   }
+
+  // 标题显现：程序化滚动时 IntersectionObserver 不一定会触发
+  $$('.reveal:not(.in)').forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.bottom > 64 && r.top < vh - 48) el.classList.add('in');
+  });
 
   // 时间线：竖向滚动换算成横向平移
   const tp = sectionP(tl);
@@ -159,25 +157,25 @@ $('.term').addEventListener('inview', async () => {
 // ---------- 复制命令 ----------
 $$('.copy').forEach(btn => btn.addEventListener('click', async () => {
   const label = btn.textContent;
-  try { await navigator.clipboard.writeText(btn.dataset.copy); btn.textContent = '[ 已复制 ✓ ]'; }
-  catch { btn.textContent = '[ 请手动复制 ]'; }
+  try { await navigator.clipboard.writeText(btn.dataset.copy); btn.textContent = '已复制 ✓'; }
+  catch { btn.textContent = '请手动复制'; }
   btn.classList.add('done');
   setTimeout(() => { btn.textContent = label; btn.classList.remove('done'); }, 1800);
 }));
 
 // ---------- 结构树 ----------
 const DOC = {
-  skill: ['SKILL.md', '入口说明：怎么恢复、开工前读什么、十条铁律、当前进度与下一步。提到「小黑盒」「heybox」「传送门」「journey-4x」时自动加载。'],
-  pref: ['reference/user-preferences.md', '必读。沟通习惯、审美红线、交互手感，以及每一次被纠正的误解，全部附上用户原话，方便判断边界。'],
-  spec: ['reference/spec.md', '现状规格：章节表、颜色、开场时间线、滚动曲线、镜头航点、传送门参数。数值全部摘自源码。'],
-  hist: ['reference/history.md', 'journey-21 到 43c 的每一步：用户要什么，做成了什么，为什么这样做，以及下一步的计划。'],
-  arch: ['reference/architecture.md', '模块之间的调用关系、接口、宿主状态机、资源清单，以及写代码时的约定。'],
-  work: ['reference/workflow.md', '每次改动的固定流程、测试里踩过的坑、文档怎么更新、GitHub Pages 怎么部署。'],
-  restore: ['scripts/restore.sh', '校验快照 SHA-256，解压，按文件清单逐个比对，确认 sample 与 index 一致，最后初始化成首个 git 提交。'],
-  regress: ['scripts/regress.mjs', 'headless 浏览器跑 22 项：3D 启动、一滑一段、触控板惯性、滚动响应、三个游戏进出、Esc 中途返回、手机，并生成逐帧拼图。'],
-  check: ['scripts/final-check.mjs', '打包检查：语法、import 能否解析、有没有裸包依赖、sample.html 与 index.html 是否逐字节一致。'],
-  cdp: ['scripts/cdp.mjs · sheet.mjs', '启动 headless Edge / Chrome 的 CDP 小工具，以及把多张截图拼成对比图的脚本。'],
-  snap: ['assets/heybox-journey-43c.tar.gz', 'journey-43c 的逐字节快照，含 dist/、blender/ 与全部文档。恢复出来的结果与原项目 diff -rq 完全相同。']
+  skill: ['SKILL.md', '入口：怎么恢复、读什么、十条铁律、当前进度。'],
+  pref: ['reference/user-preferences.md', '沟通习惯、审美红线、交互手感，附用户原话。'],
+  spec: ['reference/spec.md', '章节、颜色、开场、滚动、镜头、传送门，数值摘自源码。'],
+  hist: ['reference/history.md', 'journey-21 到 43c：要什么、做成了什么、下一步。'],
+  arch: ['reference/architecture.md', '模块关系、状态机、资源清单、写法约定。'],
+  work: ['reference/workflow.md', '改动流程、测试坑、文档更新、部署命令。'],
+  restore: ['scripts/restore.sh', '校验快照，解压，逐文件比对，初始化 git。'],
+  regress: ['scripts/regress.mjs', '22 项浏览器回归，并生成逐帧拼图。'],
+  check: ['scripts/final-check.mjs', '语法、依赖、sample 与 index 是否一致。'],
+  cdp: ['scripts/cdp.mjs · sheet.mjs', 'headless 浏览器与截图拼图。'],
+  snap: ['assets/heybox-journey-43c.tar.gz', 'journey-43c 逐字节快照，16 MB。']
 };
 const anPath = $('#an-path'), anText = $('#an-text');
 let anKey = 'skill', anTimer = 0;
