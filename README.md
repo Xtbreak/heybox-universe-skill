@@ -1,6 +1,9 @@
 # heybox-universe · Claude Code skill
 
-用于复刻并继续开发「小黑盒 · 三世界宇宙旅程」（非官方、非商用课程概念 Demo）的 Claude Code skill。线上 Demo：https://xtbreak.github.io/heybox-universe/
+用于复刻并继续开发「小黑盒 · 三世界宇宙旅程」（非官方、非商用课程概念 Demo）的 Claude Code skill。
+
+- 展示页：https://xtbreak.github.io/heybox-universe-skill/
+- 线上 Demo：https://xtbreak.github.io/heybox-universe/
 
 ## 安装
 ```bash
@@ -20,5 +23,6 @@ cd ~/Code/heybox && python3 启动预览.py --port 8017
 - `reference/`：用户偏好、现状规格、版本演进、代码架构、工作流程
 - `scripts/`：恢复、打包检查、浏览器回归（22 项）、截图拼图
 - `assets/heybox-journey-43c.tar.gz`：项目快照（含 dist/、blender/、文档），校验值见 `assets/SHA256SUMS`
+- `docs/`：展示页（GitHub Pages），不参与 skill 运行；本地预览见 `docs/README.md`
 
 素材授权见快照内的 `dist/credits.html` 与各授权文件。

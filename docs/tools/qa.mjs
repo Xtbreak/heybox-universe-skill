@@ -1,6 +1,6 @@
 // 落地页自检：按滚动位置逐段截图，并收集控制台错误
 // 用法：node tools/qa.mjs [地址] [输出目录] [宽] [高]
-import {launch} from '/Users/xtbreak/.claude/skills/heybox-universe/scripts/cdp.mjs';
+import {launch} from '../../scripts/cdp.mjs';
 import fs from 'node:fs';
 
 const url = process.argv[2] || 'http://127.0.0.1:8031/';
